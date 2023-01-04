@@ -4,10 +4,188 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="all_css.css">
   <title>First Repo Making</title>
+  <style>
+    label{
+      display: block;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Welcome my first blog website</h1>
+    <nav>
+      <ul>
+        <li>Menu 1</li>
+        <li>Menu 2</li>
+        <li>Menu 3</li>
+        <li>Menu 4</li>
+        <li>Menu 5</li>
+        <li>Menu 6</li>
+      </ul>
+    </nav>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, exercitationem.</p>
+  </header>
+  <main>
+    <section class="blogs">
+      <article>
+        <h3>Blog One</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste saepe mollitia facilis perferendis repellendus voluptatum tenetur eos distinctio, id blanditiis, inventore vero. Quam incidunt voluptatibus necessitatibus minima deserunt sed repellat voluptatem eius velit praesentium dicta quidem hic at ab, explicabo numquam harum sequi quisquam tempora eligendi esse reiciendis, aspernatur veritatis?</p>
+      </article>
+
+      <article>
+        <h3>Blog One</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste saepe mollitia facilis perferendis repellendus voluptatum tenetur eos distinctio, id blanditiis, inventore vero. Quam incidunt voluptatibus necessitatibus minima deserunt sed repellat voluptatem eius velit praesentium dicta quidem hic at ab, explicabo numquam harum sequi quisquam tempora eligendi esse reiciendis, aspernatur veritatis?</p>
+      </article>
+    </section>
+
+    <section class="photo-albums">
+
+    </section>
+  </main>
+
+  <footer>
+    <small>Copyright for 2050</small>
+  </footer>
   <h1>Md Jakir Hossain</h1>
   <h2>Md Mamun Mia</h2>
+  <h3>Explore audio and video</h3>
+  <audio src="assests/media/videoplayback.m4a" controls>This is a TED audio</audio>
+
+  <video src="assests/media/ted_video.mp4" width="200" controls></video>
+  <br><br><br>
+
+  <iframe src="https://www.google.com" title="W3Schools Free Online Web Tutorials"></iframe>
+
+  <form action="">
+    <h2>Pitha Ghor Form</h2>
+    <label for="name">
+      Your Name
+      <input type="text" id="name" placeholder="Your Name">
+    </label>
+    <label for="email">
+      Your Email 
+      <input type="email" id="email" placeholder="Your Email">
+    </label>
+
+    <fieldset>
+      <legend>Pic One Pitha</legend>
+      <!-- Radio button is by default for one selection -->
+      <!-- If there is more than one label then everyone's name should be same and for attributes should replicates the id -->
+      <label for="chitoy">
+        <input type="radio" name="pitha" id="chitoy">
+        Chitoy
+      </label>
+      <label for="Gorgori">
+        <input type="radio" name="pitha" id="gorgori">
+        Gorgori
+      </label>
+      <label for="vapa">
+        <input type="radio" name="pitha" id="vapa">
+        videoplayback
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Select one or more vortas</legend>
+      <label for="sorisa">
+        <input type="checkbox" name="vorta" id="sorisa">
+        Sorisa
+      </label>
+      <label for="shutki">
+        <input type="checkbox" name="vorta" id="shutki">
+        Shutki
+      </label>
+      <label for="badam">
+        <input type="checkbox" name="vorta" id="badam">
+        Badam
+      </label>
+      <textarea name="suggestion" id="suggestion" cols="30" rows="2">Give Suggestion</textarea>
+    </fieldset>
+    <br>
+    <input type="reset" value="Reset All">
+    <input type="submit" value="Submit">
+  </form>
+
+
+    <!-- Html table: MODULE 4.4 -->
+    <h1>HTML Table Making</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Full Name</th>
+          <th>Positon</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- table row tag -->
+      <tr>
+        <!-- table data -->
+        <td>1</td>
+        <td>Bill Gates</td>
+        <td>Microsoft</td>
+        <td>$1000</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Steve Jobs</td>
+        <td>Apple</td>
+        <td>$1200</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Larry Page</td>
+        <td>Google</td>
+        <td>$1300</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>Mark Zukerburg</td>
+        <td>Facebook</td>
+        <td>$1500</td>
+      </tr>
+      </tbody>
+    </table>
+
+
+    <!-- Html navigation bar:MODULE -4.5 -->
+  
+  <h1>Website Navigation Making</h1>
+    <header>
+      <h2>My Salary Sheet</h2>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Form</a></li>
+          <li><a href="">Fromula</a></li>
+          <li><a href="">Performance</a>
+            <ul class="nested_dropdown">
+              <li><a href="">Home</a></li>
+              <li><a href="">Form</a></li>
+              <li><a href="">Fromula</a></li>
+              <li><a href="">Performance</a>
+                <ul class="nested_dropdown">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Form</a></li>
+                  <li><a href="">Fromula</a></li>
+                  <li><a href="">Performance</a></li>
+                  <li><a href="">Semantic</a></li>
+                </ul>
+              </li>
+              <li><a href="">Semantic</a></li>
+            </ul>
+          </li>
+          <li><a href="">Semantic</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br><br><br><br><br>
 </body>
 </html>
